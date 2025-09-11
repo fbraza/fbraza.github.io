@@ -113,19 +113,19 @@ It was not that AXA was wrong. It was perfect for many of my colleagues who thri
 
 ## An interesting detour in a think tank
 
-But things not always go as you expect. During my job search, a peculiar job offer caught my attention: a think tank looking for someone with experience as a biologist, knowledge of AI, and interest in European policy. The improbability of this combination made me laugh. It was as if someone had been watching my career and designed a role specifically for my weird trajectory. The interview with my future director clicked immediately. She has been a scientist herself, then worked at WHO and the United Nations, even served as deputy minister in her home country. She saw in me not just the biologist or the engineer, but the synthesis of both: someone who could translate between the languages of science, technology, and policy. For eight stellar months, I experienced what work could be when everything aligns. We dove deep into biosecurity challenges, explored the bioeconomy's potential, stood at the intersection of AI and biotech trying to help policymakers understand implications they could barely imagine. This was not just intellectually stimulating; it felt important. My manager's leadership style was transformative: she assumed competence, encouraged exploration, and created psychological safety that allowed real innovation.
+But things do not always unfold as we expect and sometimes, it is where some interesting chapters begin. 
 
-Then leadership changed, and with it, everything else.
+During my job search, a peculiar opportunity caught my eye: a think tank seeking someone with a biologist’s background, a grasp of AI, and a curiosity about European policy. The improbability of that combination made me laugh. It felt like someone had quietly mapped my winding career and designed a role just for its odd contours. The interview with my future director, Velislava Petrova, clicked instantly. She was a scientist turned into a global policy shaper, with experience at the WHO, the UN, and even as a deputy minister. She saw something in me I had not fully named yet: not just the biologist or the engineer, but the bridge-builder. Someone who could move between the languages of science, tech, and policy, helping each side hear the other.   
 
-The transformation triggered every warning signal I learnt to recognize. Processes multiplied overnight. The new vertical approach replaced the culture that had drawn me in. I watched the organization shift into what I can only describe as being very corporate: lots of movement and lots of meetings. But what unsettled me most was recognizing a familiar pattern from academia: the prestige trap, just wearing different clothes. The Brussels bubble, as insiders call it, is its own ecosystem where proximity to European institutions becomes its own form of currency. Some colleagues genuinely thrived in this environment. They found meaning in navigating these political dynamics, in being part of this influential circle. For them, this was exactly where they wanted to be.
+For eight extraordinary months, I experienced what work can feel like when purpose, people, and possibility align. We dove into [biosecurity](https://cfg.eu/biotechnology-and-the-next-pandemic-part-2-innovation-or-threat/) frontiers, mapped the bioeconomy’s [potential](https://cfg.eu/european-biopower/), stood at the crossroads of [AI and biotech](https://cfg.eu/biotech-atlas-announcement/). A lot of my work consisting on [translating complexity](https://cfg.eu/mirror-life/) for policymakers navigating uncharted territory. It wasn’t just intellectually alive — it felt necessary. My manager’s leadership was a quiet revolution: she assumed competence, invited exploration, and cultivated the kind of psychological safety where real innovation could take root. 
 
-For me, it felt somehow like being back in the academic circuit. A recursive loop where we were writing reports for people who would use them to write their own reports, increasingly distant from any real-world implementation. The environment had become deeply political despite our "apolitical" label, and I found myself again optimizing for the wrong things. I could feel myself slipping back into patterns I worked hard to escape. Performing expertise rather than developing it, valuing institutional proximity over problem-solving, getting caught up in organizational processes rather than focusing on substance. The same toxic hints I saw in academia were reforming around me, just with different acronyms and a more polished environment. This was not about the think tank being wrong. It was about me recognizing I was in the wrong place. The very things that made others feel important and connected made me feel trapped and disconnected. Where they saw opportunity to influence policy, I saw distance from tangible impact. Where they found satisfaction in high-level strategy, I craved the direct feedback loops of building and implementation. 
+Then, as organizations do, strategy evolved and with it, so did the rhythm of my days. 
 
-I made a decision that my younger self would have found inconceivable. I decided to quit. 
+I began to notice subtle shifts. It wass less science and more lobbying with a lot of upcoming public affairs work. Also the company were multiplying processes. Its structures started tightening and conversations growing more cautious. It was not wrong. It was simply... different. And in that difference, I recognized that the Brussels bubble (as insiders call it) is clearly its own ecosystem, humming with influence and institutional gravity. And to have impact in this bubble you need to embrace their rules. For many of my brilliant colleagues, this was exactly where they thrived: navigating political currents, shaping strategy, finding deep meaning in the dance of policy and power. And I admired that. Truly. 
 
-No backup plan, no next role lined up. By the time you read this, I will have submitted my resignation, effective September 19th, 2025. Not because the work does not matter, it matters enormously. But because I learnt to recognize when an environment activates my worst professional instincts, when I am being pulled back into patterns that strongly impacted me once before.
+For me, though? I began to feel a familiar cognitive dissonance. Not because the work lacked value: it mattered deeply. But because my own compass was pointing elsewhere. I found myself craving the tangible, the iterative, the hands-on. The direct feedback loops of building, testing, adjusting. The messy, fertile ground where ideas meet implementation, not just interpretation. This was not about the organization. It was about me. About recognizing with kindness, not judgment, that I had outgrown the fit. Where others saw leverage, I felt distance. Where they found fulfillment in high-level strategy, I longed for grounded impact. And it is ok. More than ok I think it is natural. 
 
-Sometimes the bravest thing is to admit that you do not belong, even when everyone else seems to be thriving.
+So I made a decision my younger self would have found unthinkable: I chose to leave. No safety net. No next step neatly mapped. By the time you read this, I will have submitted my resignation, effective September 19th, 2025. Not because the mission failed, it burns brighter than ever. But because I have learned to listen when my inner voice says, “This is no longer where you grow.” Sometimes the bravest thing is not to push through. It is to pause, to honor your own evolution, and to step gently into the next unknown.
 
 ## Lessons learned
 
@@ -133,41 +133,73 @@ After this journey through academia, consultancies, startups, corporations, and 
 
 ### What I need:
 
-- The environments where I thrived most shared certain characteristics. They were places where building mattered more than talking about building. Where you could see the direct impact of your work, not filtered through layers of abstraction or organizational procedures. Where technical decisions were made by the people actually doing the technical work, not by those selling it or managing it from a distance.
-- I discovered I need radical transparency. Not the corporate kind where "transparency" means carefully curated information, but the real kind where you can see how decisions are made, where money goes, what projects are actually about. The secrecy and information holding I encountered, whether in academia or corporate organizations, creates the very dysfunction it claims to prevent.
-- I need environments that **treat learning as a core activity**, not a guilty pleasure you squeeze in after hours. The places that killed my spirit were those where growth was seen as a threat to billable hours or where staying in your lane was valued over expanding your capabilities. Give me a place that says "we do not know what we do not know yet" over one that pretends to have all the answers.
+The places where I felt most alive, whether in a lab, a startup, or those early, electric months at CFG shared a few quiet constants: 
+
+- `Building > Talking` about building. I need to see the fingerprints of my work in the world — not through reports, dashboards, or org charts, but in real, tangible outcomes. Where decisions about how to build are made by those doing the building — not those selling it, managing it, or approving it from three floors up. 
+
+- `Radical transparency`, the real kind. Not the performative “we are transparent!” that masks curated messaging. But the messy, honest kind: Here is how we decided this. Here is where the money goes. Here is what we are actually trying to solve. I have seen how secrecy even well-intentioned breeds confusion, mistrust, and ultimately, dysfunction. Clarity, even when uncomfortable, is kindness. 
+
+- `Learning as oxygen, not dessert`. The places that drained me treated growth as a luxury. Something to squeeze in between billable hours or performance reviews. The places that energized me? They treated learning as core work. They said, “We do not know what we do not know yet and that is exciting.” Not having all the answers is not a weakness. It is acutally the starting point of real innovation. 
+     
 
 ### The death of artificial metrics:
 
-- A lot of environments I evolved in were obsessed with the what I think to be the wrong metrics. Academia's impact factors. Consultancies' billable hours. Corporations' quarterly targets. Policy world's proximity to power. These metrics become ends in themselves, divorced from any actual value creation. I personally think that once a measure becomes a target, it ceases to be a good measure. What I am looking for instead are places that measure what matters: Does the code work? Does it solve a real problem? Are we learning? Are we building something we are proud of? These are not metrics you can game or perform: they are either true or they are not.
+So many systems I’ve moved through measure the wrong things — and then act surprised when people optimize for them. 
 
-### Small teams, big impact:
+- Academia’s impact factors.  
+- Consultancies’ billable hours.  
+- Corporations’ quarterly targets.  
+- Policy circles’ proximity to power.
+     
+These are not neutral indicators if they become goals. And once a measure becomes a target, as Goodhart’s Law reminds us, it ceases to be a good measure. 
 
-- The best experience I had were in small, autonomous teams. Whether in a lab, at Sunrise, or during those first months at CFG. There's something magical about having a group of people aligned on a goal, each bringing different skills, all able to see their direct contribution to the outcome. Large organizations try to recreate this with "agile" methodologies, but you cannot fake the intimacy and accountability of a genuinely small team.
+What I’m looking for instead? Simpler, truer questions: 
+
+- Does the code work? 
+- Does it solve a real problem?
+- Are we learning?
+- Are we building something we are proud of? 
+
+These are not metrics you can game or perform: they are either true or they are not.
+
+### Small teams, big heart and massive impact:
+
+My most meaningful work has always happened in small, autonomous groups. Whether in a research lab, at Sunrise, or those first months at CFG. 
+
+There is a magic in small teams: alignment without bureaucracy, accountability without surveillance, contribution without credit-chasing. You see your impact. You feel the shared momentum. Large organizations try to replicate this with “agile” rituals. However you cannot just manufacture intimacy. You can only protect the conditions where it grows. 
 
 ### Trust over surveillance:
 
-- The organizations that demanded timesheets, constant status updates or sterile performance were invariably the ones I felt were producing the least actual value. It is a paradox that seems to escape most management: the more you try to measure and control productivity, the less productive people become. They optimize for looking busy rather than being effective.
-- What I am seeking are environments built on trust. Environments where if you hire people and give them interesting problems, you do not need to watch them every minute. Where the assumption is that people want to do good work, not that they are trying to slack off. Where flexibility, in when and how you work, is seen as treating adults like adults, not as a privilege to be earned.
+The more an organization tries to measure productivity with timesheets, check-ins, KPIs stacked like Jenga blocks, the less actual productivity I have seen. People do not become more effective. They become better at looking effective. 
+
+What I value and seek are environments built on trust: 
+
+- Where hiring someone means believing they want to do good work not assuming they will slack off unless watched.
+- Where flexibility is not a perk, but a principle: adults trusted to manage their time, energy, and focus.
+- Where the question is not “Are you working?” but “What are you working on and how can we help?”
+     
+Trust is not naive. It is strategic. And it is a strong foundation on which innovation can be built. 
 
 ## What comes next
 
-As I prepare to leave CFG, I am also realising that **I missed coding and engineering a LOT**. I missed the problem solving, the implementation of meanigful software or data products. 
+As I prepare to leave CFG, I am realizing something simple, yet profound: I miss building stuff. 
 
-I know that the perfect organization does not exist. And I am not looking for that. I look for one that is consciously imperfect but learning. One that admits it does not have everything figured out but is committed to figuring it out together.
+Not just ideas. Not just strategies. But code. Data pipelines. Tools that solve real problems. The quiet joy of debugging at 10 PM because you are so close. The satisfaction of shipping something that did not exist yesterday and now does, because you and your team iworked hard for that. I know the “perfect” organization does not exist. And I am not looking for perfection. I am looking for conscious imperfection. A place that know they are works-in-progress, but are committed to learning, adapting, and growing together. I want to work somewhere that values: 
 
-I want to work somewhere that values:
+- Craftsmanship over credentials: where what you build matters more than where you studied or how you dress it up.
+- Transparency over hierarchy: where information flows freely, and decisions are made closest to the work.
+- Learning over knowing: where “I do not know, let’s find out” is celebrated, not silenced.
+- Building over performing: where shipping working solutions beats perfect slide decks.
+- Quirks over conformity: where different rhythms, styles, and approaches are seen as assets, not anomalies.
+- Sustainable pace over heroic sprints: where rest is not a reward, but a requirement. Where “balance” is nt a slogan. It is an operational reality.
+- (And yes. Probably a few things I have not even thought of yet... and will fall in love with when I find them.)
+     
 
-- Craftsmanship over credentials, where the quality of what you build matters more than where you studied or the image you reflect to others
-- Transparency over hierarchy, where information flows freely and decisions are made by those closest to the work
-- Learning over knowing, where "I do not know, let's find out" is valued over false expertise
-- Building over performing, where shipping working solutions beats slide presentations
-- Individual quirks over corporate conformity, where different working styles are seen as strength, not deviation
-- Sustainable pace over heroic sprints, where work-life balance is not just a slogan but an operational reality
-- most likely other aspects I did not even thought about and that I may love
+These are not utopian dreams. I have seen glimmers of all of them. In David’s quiet mentorship at Adaltas, in Cyril’s collaborative spark at Sunrise, in those early CFG moment when curiosity led the way, even in academia’s luminous moments when discovery eclipsed everything. 
 
-These are not utopian demands. I saw glimpses of all of them in different places. At Adaltas with David's technical mentorship. At Sunrise with Cyril's collaborative leadership. In those early months at CFG when we were genuinely exploring important problems. Even in academia's best moments, when the joy of discovery overshadowed the institutional dysfunction. What is different now is that I know these are not just nice-to-haves. They are prerequisites for me to do meaningful work. I learnt that I can survive in environments that lack them, but survival is not the goal. The goal is to grow and learn. 
+What is different now? I know these aren’t “nice-to-haves.” They are non-negotiables not for survival, but for thriving. I can survive without them. I have.
+But survival isn’t the goal anymore. The goal is to grow. To learn. To build with joy, with rigor, with heart. 
 
-The goal is to contribute to environments where excellence and humanity reinforce each other rather than compete.
+The goal is to contribute to spaces where excellence and humanity do not compete they collaborate.
 
 >Le travail est indispensable au bonheur de l'homme ; il l'élève, il le console ; et peu importe la nature du travail, pourvu qu'il profite à quelqu'un : faire ce qu'on peut, c'est faire ce qu'on doit. Alexandre Dumas Fils.
