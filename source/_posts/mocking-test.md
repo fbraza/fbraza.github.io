@@ -1,5 +1,5 @@
 ---
-title: “Mocking in unittest"
+title: Mocking in unittest
 summary: “An approach to mocking"
 date: "2025-07-17"
 tags:

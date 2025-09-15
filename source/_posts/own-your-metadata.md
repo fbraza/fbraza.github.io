@@ -1,5 +1,5 @@
 ---
-title: "Own your metadata with metadata hubs"
+title: Own your metadata with metadata hubs
 summary: "State of the art for metadata hub Open Source solutions"
 date: "2022-12-05"
 tags:

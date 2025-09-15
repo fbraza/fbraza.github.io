@@ -1,5 +1,5 @@
 ---
-title: "An overview of Vertex.ai"
+title: An overview of Vertex.ai
 date: "2023-09-31"
 tags:
     - Python
