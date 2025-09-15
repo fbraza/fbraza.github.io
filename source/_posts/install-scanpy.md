@@ -1,5 +1,5 @@
 ---
-title: "Installation of Scanpy on a Mac M1"
+title: Installation of Scanpy on a Mac M1
 date: "2022-02-10"
 tags:
     - Python

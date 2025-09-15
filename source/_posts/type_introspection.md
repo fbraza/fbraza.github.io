@@ -1,5 +1,5 @@
 ---
-title: "When your Python code needs to understand itself"
+title: When your Python code needs to understand itself
 summary: "A practical journey through Python's inspect and typing modules - the detective tools that let your applications understand function signatures and types at runtime"
 date: "2025-08-09"
 tags:

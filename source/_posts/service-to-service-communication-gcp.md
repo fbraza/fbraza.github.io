@@ -1,5 +1,5 @@
 ---
-title: "Service to service communication in Google Cloud"
+title: Service to service communication in Google Cloud
 date: "2023-09-23"
 tags:
     - Google Cloud
