@@ -1,6 +1,6 @@
 ---
 title: A brief overview to arrays and stacks
-summary: “A brief overview to arrays and stacks"
+summary: A brief overview to arrays and stacks
 date: "2025-09-15"
 tags:
     - Data structure
