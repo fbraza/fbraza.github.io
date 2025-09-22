@@ -41,11 +41,13 @@ def brut_force(nums: list[int]) -> int:
     return max_sum
 ```
 
-Please feel free to play around with the embedded python tutor below.
+The tome complexity of this algorithm is `O(n^2)`. Each loop is `O(n)` so we have `O(n * n)`.
+
+>Please feel free to play around with the embedded python tutor below.
 
 <iframe
   width="800"
-  height="500"
+  height="600"
   frameborder="0"
   src="https://pythontutor.com/iframe-embed.html#code=def%20brut_force%28nums%3A%20list%5Bint%5D%29%20-%3E%20int%3A%0A%20%20%20%20max_sum%20%3D%20nums%5B0%5D%0A%20%20%20%20%0A%20%20%20%20for%20i%20in%20range%28len%28nums%29%29%3A%0A%20%20%20%20%20%20%20%20current_sum%20%3D%200%0A%20%20%20%20%20%20%20%20for%20j%20in%20range%28i,%20len%28nums%29%29%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20current_sum%20%2B%3D%20nums%5Bj%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20max_sum%20%3D%20max%28max_sum,%20current_sum%29%0A%20%20%20%20%0A%20%20%20%20return%20max_sum%0A%20%20%20%20%0A%0Anums%20%3D%20%5B4,%20-1,%202,%20-7,%203,%204%5D%0Abrut_force%28nums%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=25&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">
 </iframe>
@@ -66,8 +68,23 @@ def kadane(nums: list[int]) -> int:
     return max_sum
 ```
 
-### To practice
+This algorithm is very smart and allows you to obtain the answer in `O(n)`. Simple and efficient.
 
-- https://leetcode.com/problems/maximum-subarray/
-- https://leetcode.com/problems/maximum-sum-circular-subarray/
-- https://leetcode.com/problems/longest-turbulent-subarray/
+>Look as the number of step decreased in the python tutor frame below. Play with it to see how the code is being executed
+
+<iframe
+  width="800"
+  height="600"
+  frameborder="0"
+  src="https://pythontutor.com/iframe-embed.html#code=def%20kadane%28nums%3A%20list%5Bint%5D%29%20-%3E%20int%3A%0A%20%20%20%20max_sum%20%3D%20nums%5B0%5D%0A%20%20%20%20current_sum%20%3D%200%0A%0A%20%20%20%20for%20num%20in%20nums%3A%0A%20%20%20%20%20%20%20%20current_sum%20%3D%20max%280,%20current_sum%20%2B%20num%29%0A%20%20%20%20%20%20%20%20max_sum%20%3D%20max%28current_sum,%200%29%0A%0A%20%20%20%20return%20max_sum%0A%20%20%20%20%0A%0Akadane%28%5B4,%20-1,%202,%20-7,%203,%204%5D%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=24&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">
+</iframe>
+
+### Let's suffer
+
+A set of exercises to practice the concept.
+
+- [maximum-subarray](https://leetcode.com/problems/maximum-subarray/)
+- [maximum-sum-circular-subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/)
+- [longest-turbulent-subarray](https://leetcode.com/problems/longest-turbulent-subarray/)
+
+## Sliding window
