@@ -7,7 +7,7 @@ tags:
     - Algorithms
 ---
 
-In a previous article we quickly glance through array fundamentals. We saw how array are presented in RAM, the difference between static and dynamic arrays and how an array can be ued to build a data structure called stack. Here we are going to dive a bit more deeper into different algortihmic pattern that how can used when dealing with arrays.
+In a previous article we quickly glanced through array fundamentals. We saw how array are presented in RAM, the difference between static and dynamic arrays and how an array can be used to build a data structure called a stack. Here we are going to dive a bit more deeper into different algortihmic patterns for arrays and their solutions.
 
 ## The Kadane's algorithm
 
@@ -43,15 +43,6 @@ def brut_force(nums: list[int]) -> int:
 
 The tome complexity of this algorithm is `O(n^2)`. Each loop is `O(n)` so we have `O(n * n)`.
 
->Please feel free to play around with the embedded python tutor below.
-
-<iframe
-  width="800"
-  height="600"
-  frameborder="0"
-  src="https://pythontutor.com/iframe-embed.html#code=def%20brut_force%28nums%3A%20list%5Bint%5D%29%20-%3E%20int%3A%0A%20%20%20%20max_sum%20%3D%20nums%5B0%5D%0A%20%20%20%20%0A%20%20%20%20for%20i%20in%20range%28len%28nums%29%29%3A%0A%20%20%20%20%20%20%20%20current_sum%20%3D%200%0A%20%20%20%20%20%20%20%20for%20j%20in%20range%28i,%20len%28nums%29%29%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20current_sum%20%2B%3D%20nums%5Bj%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20max_sum%20%3D%20max%28max_sum,%20current_sum%29%0A%20%20%20%20%0A%20%20%20%20return%20max_sum%0A%20%20%20%20%0A%0Anums%20%3D%20%5B4,%20-1,%202,%20-7,%203,%204%5D%0Abrut_force%28nums%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=25&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">
-</iframe>
-
 ### The kadane's way
 
 The idea behind the kadane's algorithm is pretty simple. If your sum is below `0`. Reset your max to `0` and keep adding the element of the list until the end. The code will look like this.
@@ -70,15 +61,6 @@ def kadane(nums: list[int]) -> int:
 
 This algorithm is very smart and allows you to obtain the answer in `O(n)`. Simple and efficient.
 
->Look as the number of step decreased in the python tutor frame below. Play with it to see how the code is being executed
-
-<iframe
-  width="800"
-  height="600"
-  frameborder="0"
-  src="https://pythontutor.com/iframe-embed.html#code=def%20kadane%28nums%3A%20list%5Bint%5D%29%20-%3E%20int%3A%0A%20%20%20%20max_sum%20%3D%20nums%5B0%5D%0A%20%20%20%20current_sum%20%3D%200%0A%0A%20%20%20%20for%20num%20in%20nums%3A%0A%20%20%20%20%20%20%20%20current_sum%20%3D%20max%280,%20current_sum%20%2B%20num%29%0A%20%20%20%20%20%20%20%20max_sum%20%3D%20max%28current_sum,%200%29%0A%0A%20%20%20%20return%20max_sum%0A%20%20%20%20%0A%0Akadane%28%5B4,%20-1,%202,%20-7,%203,%204%5D%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=24&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">
-</iframe>
-
 ### Let's suffer
 
 A set of exercises to practice the concept.
@@ -88,3 +70,118 @@ A set of exercises to practice the concept.
 - [longest-turbulent-subarray](https://leetcode.com/problems/longest-turbulent-subarray/)
 
 ## Sliding window
+
+The Kadane’s algorithm finds the maximum sum of any contiguous subarray in one pass. But looking at it closer, you may realize that what the code is doing is ust managing a window.
+Indeed, t does not recalculate from zero every time. Instead, it evaluates to “Keep going… or start fresh here?” If the running sum is good (namely based on your rules, before was not `<` to `0`), it extends. If it goes below `0`, it resets. This is the pattern of a sliding with the right edge always moving ahead. We can acutally rewrite the kadane algorithm by expleciting the widnow:
+
+```python
+
+def kadane_with_sliding(nums: list[int]) -> list[int]:
+    """
+    return the index of the sliding window with the highest sum
+    """
+    max_sum = nums[0]
+    cur_sum = 0
+    max_left, max_right = 0, 0
+    left = 0
+
+    for right in range(len(nums)):
+        if cur_sum < 0:
+            cur_sum = 0
+            left = right
+
+        cur_sum += nums[right]
+        if cur_sum > 0:
+            max_sum = cur_sum
+            max_left, max_right = left, right
+
+    return [max_left, max_right]
+```
+
+And once you see it here, you will see windows everywhere:
+
+- Longest substring without repeats? Sliding window.
+- Max average over k elements? Sliding window.
+- Highest-scoring DNA segment? Sliding window again.
+
+### Problems with static windows
+
+In some situation your windows will have a defined size. A typical problem maybe:
+
+>Given an array, return True if there are two element withing a window of size k that are equal
+
+There are ways of brute forcing it with two `for` loops but the trick here to use the right data structure: a hashSet (`set()` in python).
+
+>In Python, the set data structure is an unordered collection of unique elements. It is implemented using a hash table, which allows for average-case constant time complexity (O(1)) for operations such as insertions, deletions, and membership tests. **REMEMBER:** `O(1)` does not mean "one operation". It means that the speed of operation is not dependent of the number of element present in your data structure.
+
+```python
+def find_duplicate(nums: list[int]):
+    window = set()
+    left = 0
+
+    for right in range(len(nums)):
+        if right - left + 1 > k:
+            window.remove(nums[left])
+            left += 1
+        if nums[right] in window:
+            return True
+        window.add(nums[right])
+
+    return False
+```
+
+We could acutally have done the same with a dictionnary.
+
+```python
+def find_duplicate(nums: list[int]):
+    window = {}
+    left = 0
+
+    for right in range(len(nums)):
+        if right - left + 1 > k:
+            del window[nums[left]]
+            left += 1
+        if window.get(nums[right], False):
+            return True
+        window[nums[right]] = True
+
+    return False
+```
+
+### Practice with these exercises
+
+- [contains-duplicate-ii](https://leetcode.com/problems/contains-duplicate-ii/)
+- [number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/)
+
+### Problems with dynamic windows
+
+At Sunrise, I built an algorithm to measure hypoxic burden. The idea ws the follwoing. The code was scanning the the SpO2 values. We used a dymanic windows:
+
+- When SpO2 drops below a threshold (e.g., 90%)
+- Next, we keep it open as long as levels stay low
+- Then we close it only when oxygen recovers and stabilizes.
+- Finally we calculate severity (area under the curve) before resetting the window.
+
+Knowing how to play with dynamic sliding window is very convenient and is applied in many other situations:
+
+- You need to fin enriched regions in ChIP-seq or ATAC-seq data? Slide a window, but adjust its size based on local signal-to-noise.
+- You are detecting bursts of activity? Expand the window while traffic is high for analysis and contract it when it the traffic descrease.
+
+This pattern is common. Let's see some basic problem examples and the code to solve them.
+
+>Find the length of the longest subarray with identical values
+
+```python
+def find_longest_subarray(nums: list[int]):
+    length = 0
+    left = 0
+
+    for right in range(len(nums)):
+        ...
+```
+
+### Suffering a bit with these exercises
+
+- [minimum-size-subarray-sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+- [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [longest-repeating-character-replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
