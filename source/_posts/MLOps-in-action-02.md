@@ -7,17 +7,17 @@ tags:
     - Cloud
 ---
 
-The objective was clear. We needed to speep up our iteration cycles. From raw data and labels to the prediction outputs that will help to training and improving our model.
+The objective was clear. We needed to speep up our iteration cycles. From raw data and labels to the prediction outputs that will help to train and improve our AI model.
 
 ## Cleaning the messy data organisation and going to the cloud
 
-First, we cleaned up our data management. We decided to centralize in our data lake all the data from spread over different buckets, dropox folders and hard drive in one bucket: the training bucket. This was our single source of truth, our Bronze layer (if you are familiar with medallion architecture from databricks).
+First, we cleaned up our data management. We decided to centralize in our data lake all the data spread over different buckets, dropox folders and hard drive in one bucket: the training bucket. This was our single source of truth, our Bronze layer (if you are familiar with medallion architecture from databricks). Obviously we brought some structure to it.
 
-Next we move from local computers to Google Cloud. To parallelize the pre-processing of our data, We used a service called Cloud Functions. It a serveless platform that package your code and spin up instances. You can scale up until 5000 thousands cloud functions in parallel and their processing times is 9 minutes maximum.
+Next we moved from local computers to Google Cloud. To parallelize the pre-processing of our data, We used a service called Cloud Functions. It a serveless platform that package your code and spin up instances. You can scale up until 5000 thousands cloud functions in parallel and their processing times is 9 minutes maximum.
 
-So we wrote the code necessary for the processing and packaged it to be shipped on Cloud Functions. Our approach was tool based. You will see that we developed a lot of CLI applications. The first one was leveraging Google Cloud python SDK to scrapes our data in the bucket, find the nights recorded both with the sunrise and polysomnography, anonymised the file, collect all metadata (night ID, bucket name, folder, filename, ect) and send all these information to subscription topic defined in Pub/Sub.
+So we wrote the code necessary for the processing and packaged it to be shipped on Cloud Functions. Our approach was tool based. You will see that we developed a lot of CLI applications. The first CLI was leveraging Google Cloud python SDK to scrapes our data in the bucket, find the nights recorded both with the sunrise and polysomnography, anonymised the file, collect all metadata (encapsulated in our `SunriseFilePayload`, see below) and send all these informations to subscription topic defined in Pub/Sub.
 
-PubSub can then push the metadata payload as an HTTP request (encapsulated in our `SunriseFilePayload`) to trigger our cloud function.
+PubSub can then push the metadata payload as an HTTP request to trigger our cloud function.
 
 A snippet of the CLI code can be found below.
 
@@ -68,7 +68,7 @@ def send_nights_to_pubsub(
 
 ## Anatomy of a cloud function
 
-With this approach, PubSub can trigger thousands of cloud functions in parallel. With each function receiveing the metadata for one file, we could process thousands of files in a matter of minutes. Two Cloud Functions are used at this stage: one to process specifically the sunrise data, and one to process the polysomnography data.
+With this approach, we could now trigger thousands of cloud functions in parallel. With each function receiveing the metadata for one file, we could process thousands of files in a matter of minutes. Two Cloud Functions are used at this stage: one to process specifically the sunrise data, and one to process the polysomnography data.
 
 Here is how we organize our code in our repository:
 
@@ -284,12 +284,12 @@ if __name__ == "__main__":
     cli()
 ```
 
-Below is a diagram of the our whole pipeline.
+Below is a diagram of our whole pipeline.
 
 ![](/images/mlops-in-action-figure-05.png)
 
 ## Wrap up
 
-By running just a couple of commands we could process more than 2000 files in some hours instead of days. The gain in time and efficiency was huge. At each step we enforce good DevOps practices with continous integration and development with containarization and Github Actions.
+By running just a couple of commands we could process more than 2000 files in some hours instead of days. The gain in time and efficiency was huge. At each step we tried to enforce good DevOps practices with continous integration and development using testing, containerization and Github Actions.
 
 At this step we had another huge challenge to tackle: the training of the model. The generated predictions will be used with the labelled data and be ingested by our model for training. In the next article I will describe how we did that with Vertex.AI.

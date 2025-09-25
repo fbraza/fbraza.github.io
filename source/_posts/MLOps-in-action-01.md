@@ -11,7 +11,7 @@ When I landed my first tech jobs, I quickly realize that no amount of side proje
 
 One team might have sophisticated CI/CD pipelines on GitHub, while another struggles with basic version control on Bitbucket. Sometimes the constraints get even more unexpected but still interesting. At my work with AXA Belgium, we could not use Docker containers for security reasons, period. This meant deploying an LLM application required other solutions like AWS Lambda instead of the straightforward Fargate approach we would have preferred. Not ideal, but it worked.
 
-This brings me to why I'm writing this serie of articles. I want to share how we tackled some data and machine learning challenges at Sunrise. Our deployment strategies, our attempt at MLOps best practices, and the solutions we developed for our specific constraints. This is not a blueprint you should copy. It is simply the story I participated to build: how we approached technical challenges with their particular stack, requirements, and trade-offs.
+Here I want to share how we tackled some data and machine learning challenges at Sunrise. Our deployment strategies, our attempt at MLOps good practices, and the solutions we developed for our specific constraints. This is not a blueprint you should copy. It is simply the story I built there: how we approached technical challenges with their particular stack, requirements, and trade-offs.
 
 ## What is sunrise by the way
 
