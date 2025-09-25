@@ -155,14 +155,14 @@ def find_duplicate(nums: list[int]):
 
 ### Problems with dynamic windows
 
-At Sunrise, I built an algorithm to measure hypoxic burden. The idea ws the follwoing. The code was scanning the the SpO2 values. We used a dymanic windows:
+At Sunrise, I built an algorithm to measure hypoxic burden. The idea was to scan the SpO2 values. For that we used a dymanic windows:
 
 - When SpO2 drops below a threshold (e.g., 90%)
 - Next, we keep it open as long as levels stay low
 - Then we close it only when oxygen recovers and stabilizes.
 - Finally we calculate severity (area under the curve) before resetting the window.
 
-Knowing how to play with dynamic sliding window is very convenient and is applied in many other situations:
+Knowing how to play with dynamic sliding window is very convenient and can be applied to many other situations:
 
 - You need to fin enriched regions in ChIP-seq or ATAC-seq data? Slide a window, but adjust its size based on local signal-to-noise.
 - You are detecting bursts of activity? Expand the window while traffic is high for analysis and contract it when it the traffic descrease.
@@ -177,7 +177,31 @@ def find_longest_subarray(nums: list[int]):
     left = 0
 
     for right in range(len(nums)):
-        ...
+        if nums[left] != nums[right]:
+            left = right
+
+        length = max(length, right - left + 1)
+
+    return length
+```
+
+>Find the length of the smallest subarray where the sum of its elements is greater than or equal to a given target. Assume all values are positive.
+
+```python
+def find_min_subarray(nums: list[int], target: int):
+    length = float('inf')
+    left = 0
+    current_sum = 0
+
+    for right in range(len(nums)):
+        current_sum += nums[right]
+
+        while current_sum >= target:
+            length = min(length, right - left + 1)
+            current_sum -= nums[left]
+            left += 1
+
+    return 0 if length != float('inf') else length
 ```
 
 ### Suffering a bit with these exercises
