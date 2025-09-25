@@ -1,6 +1,6 @@
 ---
 title: An overview of Vertex.ai
-date: "2023-09-31"
+date: "2023-10-31"
 tags:
     - Python
     - Google Cloud

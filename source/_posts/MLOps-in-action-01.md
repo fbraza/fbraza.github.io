@@ -1,7 +1,7 @@
 ---
 title: Data and Machine learning engineering in action
 summary: Data and Machine learning engineering in action
-date: "2025-09-25"
+date: "2024-06-01"
 tags:
     - Python
     - Cloud

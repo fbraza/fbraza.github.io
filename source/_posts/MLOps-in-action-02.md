@@ -1,7 +1,7 @@
 ---
 title: From days to hours. How we speed up our data preparation pipelines at Sunrise.
 summary: From days to hours. How we speed up our data preparation pipelines at Sunrise.
-date: "2025-09-25"
+date: "2024-06-08"
 tags:
     - Python
     - Cloud
