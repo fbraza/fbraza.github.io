@@ -201,7 +201,7 @@ def find_min_subarray(nums: list[int], target: int):
             current_sum -= nums[left]
             left += 1
 
-    return 0 if length != float('inf') else length
+    return length if length != float('inf') else 0
 ```
 
 ### Suffering a bit with these exercises
